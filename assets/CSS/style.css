@@ -1,18 +1,50 @@
 /* Page d'accueil */
-#accueil {
-  margin: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
 }
+a { color: inherit;} 
+
 ul {
     list-style-type: none;
   }
-#corpsAccueil {
+#home > #container {
   background-image: url(../Images/running.jpg);
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+#task_bar {
+  background-color: #1714ae;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#task {
+  display: block;
+}
+#logo_cpe {
+  width: 20%;
+  height: 20%;
+  margin-left: 20px;
+}
+.button_task {
+  margin-right: 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+}
+.button_task:hover {
+  background-color: #0d0b6b;
+  border-radius: 5px;
+  cursor: pointer;
+}
 /* Page Event */
 
 /* Page Training */
