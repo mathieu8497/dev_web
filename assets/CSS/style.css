@@ -1,5 +1,7 @@
 /* Page d'accueil */
-
+ul {
+    list-style-type: none;
+  }
 /* Page Event */
 
 /* Page Training */
