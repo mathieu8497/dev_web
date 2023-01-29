@@ -1,0 +1,20 @@
+Slide 1 :
+        titre: CROSS CPE LYON,
+        description: Venez courir aux couleurs de CPE LYON ,
+        image: ruuning.jpg
+
+Slide 2 :
+        titre: Evenement,
+        description: Premier cross organisé par l'association CPE RUN ,
+        image: event.jpg
+
+Slide 3 :
+        titre: Inscriptions,
+        description: Inscrivez-vous dès maintenant pour profiter de prix avantageux !,
+        image: inscrire.jpg
+
+Slide 4 :
+        titre: Préparation,
+        description: Préparez votre planning d'entraînement dès aujourd'hui !,
+        image: train.jpg
+
