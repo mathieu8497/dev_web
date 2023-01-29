@@ -1,7 +1,7 @@
 Slide 1 :
         titre: Evenement,
-        description: Premier cross organisé par l'association CPE RUN !
-        image: slide1.png
+        description: Premier cross organisé par l'association CPE RUN ,
+        image: event.jpg
 
 Slide 2 :
         titre: Inscriptions,
@@ -10,6 +10,6 @@ Slide 2 :
 
 Slide 3 :
         titre: Préparation,
-        description: Préparez votre planning d'entraînement dès aujourd'hui,
+        description: Préparez votre planning d'entraînement dès aujourd'hui !,
         image: train.jpg
 
