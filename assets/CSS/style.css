@@ -6,31 +6,47 @@
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
 }
+#title {
+  font-size: 70px;
+  font-weight: 600;
+  color: #fdfdfe;
+  text-shadow: 0px 0px 5px #263ccd, 0px 0px 10px #263ccd, 0px 0px 10px #263ccd,
+    0px 0px 20px #263ccd;
+} 
 a { color: inherit;} 
+li { display: inherit;} 
 
 ul {
     list-style-type: none;
   }
+#task{
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
 #home > #container {
   background-image: url(../Images/running.jpg);
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  flex-direction: column;
 }
 #task_bar {
   background-color: #1714ae;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 #task {
   display: block;
 }
 #logo_cpe {
-  width: 20%;
-  height: 20%;
-  margin-left: 20px;
+  width: 10%;
+  height: 10%;
+  margin-right: 5%;
 }
 .button_task {
   margin-right: 20px;
@@ -39,11 +55,57 @@ ul {
   font-size: 20px;
   font-weight: bold;
   padding: 10px;
+  display: flex;
 }
 .button_task:hover {
   background-color: #0d0b6b;
   border-radius: 5px;
   cursor: pointer;
+}
+#social_media {
+  display: flex;
+  margin-right: 20%;
+  justify-content: space-between;
+  gap: 20%;
+}
+#social_media > i {
+  margin-right: 10%;
+}
+#logo_stickman{
+  width: 3%;
+  height: 3%;
+}
+#timer{
+    justify-content: center;
+    font-size: 60px;
+    margin-top: 0px;
+    display: flex;
+  }
+#image_font{
+  margin-top: 1%;
+  background-image: url(../Images/running_track.jpg);
+  height: 20vh;
+  background-position: center;
+
+}
+#timer_info{
+    justify-content: center;
+    font-size: 25px;
+    display: flex;
+  }
+.timings{
+  margin-left: 1%;
+  margin-right: 1%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+footer{
+  margin-top: 1%;
+  background-color: #1714ae;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
 }
 /* Page Event */
 
