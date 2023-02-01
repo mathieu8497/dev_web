@@ -5,6 +5,7 @@
   box-sizing: border-box;
   text-decoration: none;
   font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
 }
 #title {
   font-size: 70px;
@@ -53,8 +54,7 @@ ul {
   display: block;
 }
 #logo_cpe {
-  width: 10%;
-  height: 10%;
+  width: 25vh;
   margin-right: 5%;
 }
 .button_task {
@@ -82,8 +82,8 @@ ul {
   margin-right: 10%;
 }
 #logo_stickman {
-  width: 4%;
-  height: 4%;
+  width: 8vh;
+  height: 8vh;
 }
 
 #weather {
@@ -259,3 +259,25 @@ main {
   margin-bottom: 10px;
 }
 
+/*Insertion Retour en haut*/
+
+#back_top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  background-color: white;
+  background-size: cover;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+}
+
+#back_top:hover {
+  background-image:url(../Images/running_track.jpg);
+  background-size: cover;
+}
