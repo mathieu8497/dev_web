@@ -37,7 +37,7 @@
             alt="Logo_stickman"
             id="logo_stickman"
           />
-          <li class="button_task" class="active">
+          <li class="button_task" class="active" id="trigger">
             <a href="./assets/HTML/inscriptions.html">Inscriptions</a>
           </li>
           <li class="button_task">
@@ -49,6 +49,12 @@
           <li class="button_task">
             <a href="./assets/HTML/preparer.html">Se préparer</a>
           </li>
+          <li>
+            <div id="weather">
+            <p id="Temp">Weather in Lyon: <span id="temperature"></span></p>
+            <div id="weather-icon"></div>
+
+          </div></li>
         </ul>
       </nav>
     </header>
@@ -84,8 +90,12 @@
                 <p>
                 <i class="fas fa-envelope"></i>
                 <a href="mailto:mathieu8497@gmail.com">mathieu8497@gmail.com</a>
+                </p>
+
     </footer>
 
-    <script src="./assets/JavaScript/functions.js"></script>
+<script src="./assets/JavaScript/api.js"></script>
+
+<script src="./assets/JavaScript/functions.js"></script>
   </body>
 </html>

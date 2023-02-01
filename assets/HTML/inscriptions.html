@@ -16,7 +16,7 @@
       <nav id="task">
         <ul id="task_bar">
           <img
-            href="https://www.cpe.fr/"
+            href="index.html"
             src="../Images/CPELYON.png"
             alt="Logo CPE Lyon"
             id="logo_cpe"
@@ -37,39 +37,57 @@
             alt="Logo_stickman"
             id="logo_stickman"
           />
-          <li class="button_task" class="active">
-            <a href="./assets/HTML/inscriptions.html">Inscriptions</a>
+          <li class="button_task" class="active" id="trigger">
+            <a href="./inscriptions.html">Inscriptions</a>
           </li>
           <li class="button_task">
-            <a href="./assets/HTML/evenement.html">L'Evenement</a>
+            <a href="./about.html">L'Evenement</a>
           </li>
           <li class="button_task">
-            <a href="./assets/HTML/infos.html">Infos Pratiques</a>
+            <a href="./infos.html">Infos Pratiques</a>
           </li>
           <li class="button_task">
-            <a href="./assets/HTML/preparer.html">Se préparer</a>
+            <a href="./preparer.html">Se préparer</a>
           </li>
+          <li>
+            <div id="weather">
+            <p id="Temp">Weather in Lyon: <span id="temperature"></span></p>
+            <div id="weather-icon"></div>
+
+          </div></li>
         </ul>
       </nav>
     </header>
     <main>
       <div id="main">
         <div id="main_content">
-          <h1>INSCRIPTIONS</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-            voluptatum, quod, quia, voluptas quae voluptates quibusdam
-            consequuntur voluptatem quidem quos quas. Quisquam, quae. Quisquam
-            voluptatum, quod, quia, voluptas quae voluptates quibusdam
-            consequuntur voluptatem quidem quos quas. Quisquam, quae.
-          </p>
-          <div id="inscription">
-            <h2>INSCRIPTIONS</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-              voluptatum, quod, quia, voluptas quae voluptates quibusdam
-              consequuntur voluptatem quidem quos quas. Quisquam, quae.
-            </p>
+          <h1 id="title_description">Running Race Registration</h1>
+          <p id="description">Welcome to the registration page for our upcoming running race. Please fill out the form below to sign up and secure your spot in the race.</p>
+          <form>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+          
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+          
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          
+            <label for="mobilePhone">Mobile Phone:</label>
+            <input type="tel" id="mobilePhone" name="mobilePhone" required>
+          
+            <label for="postalAddress">Postal Address:</label>
+            <input type="text" id="postalAddress" name="postalAddress" required>
+          
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+          
+            <input type="submit" value="Submit">
+          </form>
+          
+        </div>
+      </div>
+    </main>          
     <footer>
         <div id="footer">
             <div id="footer_content">
@@ -85,7 +103,12 @@
                 <i class="fas fa-envelope"></i>
                 <a href="mailto:mathieu8497@gmail.com">mathieu8497@gmail.com</a>
     </footer>
+    <script src="../JavaScript/api.js"></script>
+    <script src="../JavaScript/functions.js"></script>
+   
 
-    <script src="./assets/JavaScript/functions.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFEK2ZH_B9aKy2qXELWX-FP3okfO7YFJY&libraries=places"></script>
+
+
   </body>
 </html>
