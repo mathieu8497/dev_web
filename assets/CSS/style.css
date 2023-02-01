@@ -214,4 +214,10 @@ input[type="submit"]:hover {
 }
 main {
   margin-top: 10%;
+  background-image: url(../Images/train.jpg);
+  height: 140vh;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
