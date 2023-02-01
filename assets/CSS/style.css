@@ -173,7 +173,7 @@ form {
   width: 500px;
   margin: 0 auto;
   padding: 40px;
-  background-color: #f2f2f2;
+  background-color: rgba(244, 244, 244, 0.7);
   border-radius: 10px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
 }
@@ -202,7 +202,7 @@ input[type="submit"] {
   padding: 10px;
   font-size: 18px;
   margin-top: 20px;
-  background-color: #4caf50;
+  background-color: #4cafac;
   color: #ffffff;
   border: 0;
   border-radius: 5px;
@@ -210,8 +210,12 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: #3e8e41;
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+  background-color: #4285f4;
+
 }
+
 main {
   margin-top: 10%;
   background-image: url(../Images/train.jpg);
@@ -221,3 +225,37 @@ main {
   background-size: cover;
 
 }
+#train_section {
+  margin-top: 8%;
+  background-image: url(../Images/background_train.jpg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* Add some styling here */
+#title_prepare {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+.training-section {
+  padding: 20px;
+  background-color: rgba(229, 229, 229, 0.5);
+  margin-bottom: 20px;
+}
+
+.training-section h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.training-section p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
