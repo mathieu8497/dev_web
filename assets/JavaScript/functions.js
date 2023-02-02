@@ -73,5 +73,59 @@ document.querySelector("form").addEventListener("submit", function (event) {
 
   alert("Form submitted successfully!");
 });
+// Add Google Maps API code here
+function initMap() {
+  var raceLocation = { lat: 45.784283551133456, lng: 4.86973004232585 };
+  var map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 16,
+    center: raceLocation,
+  });
+  var myLatlng = new google.maps.LatLng(45.78494, 4.870582);
+  var marker = new google.maps.Marker({
+    position: myLatlng,
+    map: map,
+    label: {
+      color: 'black',
+      fontWeight: 'bold',
+      text: 'Start',
+    }});
+    var myLatlng2 = new google.maps.LatLng(45.784781, 4.870113);
+    var marker = new google.maps.Marker({
+      position: myLatlng2,
+      map: map,
+      label: {
+        color: 'black',
+        fontWeight: 'bold',
+        text: 'Finish',
+      }});
 
+  var racePath = [
+    { lat: 45.78494, lng: 4.870582 },
+    { lat: 45.785402, lng: 4.873176 },
+    { lat: 45.786161, lng: 4.876638 },
+    { lat: 45.784951, lng: 4.877158 },
+    { lat: 45.784529, lng: 4.877018 },
+    { lat: 45.783571, lng: 4.877428 },
+    { lat: 45.783897, lng: 4.879299 },
+    { lat: 45.783009, lng: 4.879239 },
+    { lat: 45.782625, lng: 4.87722 },
+    { lat: 45.782425, lng: 4.877145 },
+    { lat: 45.781194, lng: 4.87184 },
+    { lat: 45.784781, lng: 4.870113 },
+
+    // Add more Latitude and Longitude coordinates here to define the race path
+  ];
+
+  var racePathLine = new google.maps.Polyline({
+    path: racePath,
+    geodesic: true,
+    strokeColor: "#FF0000",
+    strokeOpacity: 1.0,
+    strokeWeight: 2,
+    
+  });
+
+  racePathLine.setMap(map);
+}
+initMap();
 animateSlides();

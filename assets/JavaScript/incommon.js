@@ -11,13 +11,13 @@ function HeaderFct() {
         class="button_task"\
       /></a>\
       <li id="social_media">\
-        <a href="https://facebook.com/"\
+        <a href="https://www.facebook.com/cperunlyon/"\
           ><i class="fab fa-facebook-f"></i\
         ></a>\
-        <a href="https://instagram.com/"\
+        <a href="https://www.instagram.com/runcpe/?hl=en"\
           ><i class="fab fa-instagram"></i\
         ></a>\
-        <a href="https://youtube.com/"><i class="fab fa-youtube"></i></a>\
+        <a href="https://www.strava.com/clubs/995864?oq=cpe"><i class="fab fa-strava"></i></a>\
         <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>\
       </li>\
       <img\

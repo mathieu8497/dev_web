@@ -13,12 +13,40 @@
   </head>
   <body id="home">
     <header></header>
-    <footer>
-    </footer>
+    <section id="info_race_section">
+      <h1 id="title_event">Informations sur l'evenement</h1>
+      <div id="container_about">
+        <div class="race-info">
+          <h2>Informations sur la course</h2>
+          <p>Date: April 1, 2023 14:00:00</p>
+          <p>
+            Localisation: Campus Lyontech, 3 Rue Victor Grignard, 69100
+            Villeurbanne
+          </p>
+          <p>
+            Collecte du dossard: Campus Lyontech, 3 Rue Victor Grignard, 69100
+            Villeurbanne
+          </p>
+        </div>
+        <div id="map"></div>
+      </div>
+    </section>
+    <footer></footer>
     <button id="back_top" title="Go to top">
-      <img src="../Images/backtop.svg" alt="go to top" id="image_back_top"/><!--BOUTON VERS LE HAUT-->
+      <img
+        src="../Images/backtop.svg"
+        alt="go to top"
+        id="image_back_top"
+      /><!--BOUTON VERS LE HAUT-->
     </button>
     <script src="../JavaScript/incommon.js"></script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFEK2ZH_B9aKy2qXELWX-FP3okfO7YFJY&callback=initMap"
+    ></script>
+    <script src="../JavaScript/api.js"></script>
+
     <script src="../JavaScript/functions.js"></script>
   </body>
 </html>
